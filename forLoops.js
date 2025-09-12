@@ -59,7 +59,7 @@
 
 //changing case 
 
-// *c v-1
+// *c v-2
  
 // var name = "aHmEd";
 
@@ -67,7 +67,7 @@
 
 // console.log(name.toLowerCase())
 
-var title = "muhammad ahmed";
+var title = "muhammad gHous ahmed";
 var result = "";
 for(var i = 0;i < title.length;i++){
     if(i === 0){
@@ -76,10 +76,9 @@ for(var i = 0;i < title.length;i++){
     else if(title[i] == " "){
         result += " " +title.slice(i + 1,i + 2).toUpperCase()
         i++
-        console.log(i)
     }
     else{
-        result += title[i]
+        result += title[i].toLowerCase()
     }
 }
 console.log(result);
