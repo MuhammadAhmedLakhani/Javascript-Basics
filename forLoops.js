@@ -5,7 +5,19 @@
 //repetations of lopp depend on updation , when no updation then loop ended
 
 //variable initialization ,condition, updation
+// for(i = 0; i < 5; i++){
+//     console.log(i)        //loop body / code block
+// }
+// console.log(i);            //loop stops when i = 5 so answer is 5!
+
+
+//break in loop
+
+//break keyword end the  loop immediatly at the poin it applied
+
+
 for(i = 0; i < 5; i++){
-    console.log(i)     //loop body / code block
+    console.log(i)
+    break                  //break keyword
 }
-console.log(i);        //loop stops when i = 5 so answer is 5!
+console.log(i);
