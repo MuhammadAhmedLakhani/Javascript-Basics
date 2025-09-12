@@ -51,17 +51,35 @@
 //outer loop will wait for inner loop  to complete its repeatations
 //so that it can iterate itself afterwards
 
-for(var i = 0;i < 5;i++){
-    for(var j = 0;j < 5;j++){
-        console.log(i,j)
+// for(var i = 0;i < 5;i++){
+//     for(var j = 0;j < 5;j++){
+//         console.log(i,j)
+//     }
+// }
+
+//changing case 
+
+// *c v-1
+ 
+// var name = "aHmEd";
+
+// console.log(name.toUpperCase());  //.toUpperCase method use for capitlizing strings
+
+// console.log(name.toLowerCase())
+
+var title = "muhammad ahmed";
+var result = "";
+for(var i = 0;i < title.length;i++){
+    if(i === 0){
+        result += title[i].toUpperCase()
+    }
+    else if(title[i] == " "){
+        result += " " +title.slice(i + 1,i + 2).toUpperCase()
+        i++
+        console.log(i)
+    }
+    else{
+        result += title[i]
     }
 }
-
-
-
-
-
-
-
-
-
+console.log(result);
