@@ -11,5 +11,11 @@
 
 //--->floor() method
 
-console.log(Math.floor(2.8));    //always round down
+// console.log(Math.floor(2.8));    //always round down
+
+//random numbers 16 digit decimal numbers between 0 and 1 
+
+
+console.log(Math.random() );
+
 
