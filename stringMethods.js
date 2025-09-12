@@ -26,10 +26,19 @@
 
 //indexOf gives the first index of value(s) given
 
+// var string = "SMIT Saylani";
+
+// console.log(string.indexOf("Saylani"))
+
+
+
+// ---------->i=lastIndexOf()
+
+// indexOf gives the last index of value(s) given
+
 var string = "SMIT Saylani";
 
-console.log(string.indexOf("Saylani"))
-
+console.log(string.lastIndexOf("S"))
 
 
 
