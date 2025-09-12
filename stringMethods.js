@@ -36,15 +36,22 @@
 
 // indexOf gives the last index of value(s) given
 
-var string = "SMIT Saylani";
+// var string = "SMIT Saylani";
 
-console.log(string.lastIndexOf("w"))             //returns -1 when value is not present
+// console.log(string.lastIndexOf("w"))             //returns -1 when value is not present
 
 
 //note indexOf and lastIndexOf also works with arrays
 
 
+//------------>charAt() method
+//retuens the specific character at desired index
 
+var name = "Muhammad";
+
+console.log(name.charAt(2));
+
+console.log(name[2])            ///same result as well as string supports indexing
 
 
 
