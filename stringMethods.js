@@ -47,13 +47,21 @@
 //------------>charAt() method
 //retuens the specific character at desired index
 
-var name = "Muhammad";
+// var name = "Muhammad";
 
-console.log(name.charAt(2));
+// console.log(name.charAt(2));
 
-console.log(name[2])            ///same result as well as string supports indexing
+// console.log(name[2])            ///same result as well as string supports indexing
 
 
+//------->replace() Method
+//takes  value to be replace and add new value at same place on first time only
+
+
+var inst = "Saylani SMIT";
+
+
+console.log(inst.replace( "SMIT" ,"Institute"));
 
 
 
