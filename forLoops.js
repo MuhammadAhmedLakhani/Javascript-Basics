@@ -30,8 +30,38 @@
 
 
 
-var word = prompt("Enter word");
-var reverse = "";
-for(i = (word.length - 1);i >= 0;i--){
-    console.log(word[i])
+// var word = prompt("Enter word");
+// var reverse = "";
+// for(i = (word.length - 1);i >= 0;i--){
+//     console.log(word[i])
+// }
+
+
+//nested loop
+
+//in example below console after lopp body will run only after the loop is executed fully as javascript runs line by line
+
+// for(var i = 0;i < 5;i++){
+//     console.log(i)
+// }
+// console.log("Test")
+
+
+//the outer loop will not run again until inner loop completed
+//outer loop will wait for inner loop  to complete its repeatations
+//so that it can iterate itself afterwards
+
+for(var i = 0;i < 5;i++){
+    for(var j = 0;j < 5;j++){
+        console.log(i,j)
+    }
 }
+
+
+
+
+
+
+
+
+
