@@ -30,7 +30,7 @@
 
 // console.log(string.indexOf("Saylani"))
 
-
+// *C V2
 
 // ---------->i=lastIndexOf()
 
@@ -38,8 +38,10 @@
 
 var string = "SMIT Saylani";
 
-console.log(string.lastIndexOf("S"))
+console.log(string.lastIndexOf("w"))             //returns -1 when value is not present
 
+
+//note indexOf and lastIndexOf also works with arrays
 
 
 
