@@ -16,8 +16,22 @@
 //break keyword end the  loop immediatly at the poin it applied
 
 
-for(i = 0; i < 5; i++){
-    console.log(i)
-    break                  //break keyword
+// for(i = 0; i < 5; i++){
+//     console.log(i)
+//     break                  //break keyword
+// }
+// console.log(i);
+
+
+
+
+
+//reverse loop
+
+
+
+var word = prompt("Enter word");
+var reverse = "";
+for(i = (word.length - 1);i >= 0;i--){
+    console.log(word[i])
 }
-console.log(i);
