@@ -58,10 +58,19 @@
 //takes  value to be replace and add new value at same place on first time only
 
 
-var inst = "Saylani SMIT";
+// var inst = "Saylani SMIT";
 
 
-console.log(inst.replace( "SMIT" ,"Institute"));
+// console.log(inst.replace( "SMIT" ,"Institute"));
+
+// ------->replaceAll() Method
+// takes  value(s) to be replace and add new value(s) at same place on all time it finds match.
+
+
+var inst = "Saylani SMIT SMIT SMIT sss";
+
+
+console.log(inst.replaceAll( "SMIT" ,"Institute"));
 
 
 
