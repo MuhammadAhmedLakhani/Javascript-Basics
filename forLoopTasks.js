@@ -19,13 +19,26 @@
 
 //Task2 : Minimum number extractor
 
-var numbers = [12,44,61,54,7,89,10,23];
-var min = numbers[0];
+// var numbers = [12,44,61,54,7,89,10,23];
+// var min = numbers[0];
 
-for(var i = 0;i < numbers.length;i++){
-    if(numbers[i] < min){
-        min = numbers[i]
+// for(var i = 0;i < numbers.length;i++){
+//     if(numbers[i] < min){
+//         min = numbers[i]
+//     }
+
+// }
+// console.log(min)
+
+//Task4:Finding Missing number in ordered ascending list and apending it as well in same list
+
+
+var list = [11,12,14,15,16,18,19,20];
+
+for(var i = 0;i < list.length;i++){
+    if(list[i + 1] - list[i] > 1){
+        list.splice(i+1,0,list[i] + 1)
     }
-
 }
-console.log(min)
+console.log(list);
+
