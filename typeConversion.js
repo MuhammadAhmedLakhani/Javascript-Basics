@@ -19,5 +19,20 @@
 
 //------Number data type to string conversion
 
-console.log(typeof(3.142.toString()))
+// console.log(typeof(3.142.toString()))
 
+//----toFixed() method
+//round off when above .5 value and ignore if below .5
+// you can also control num of decimal places want to show
+
+// var num = 3.2141924;
+
+// console.log(num.toFixed())     //ignoring decimals
+
+// var num = 7.5322141924;
+
+// console.log(num.toFixed())     //rounding decimals to give answer = 8
+
+var num = 4.6893232;
+
+console.log(num.toFixed(2)); //show result in 2 decimal places
