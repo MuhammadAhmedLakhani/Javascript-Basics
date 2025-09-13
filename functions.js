@@ -7,8 +7,23 @@
 // *c v-1
 
 //keyword name round brackets curly brackets        -->function syntax
-function abc() {
-    console.log(new Date())
-}
-abc();           ///calling function by their name
+// function abc() {
+//     console.log(new Date())
+// }
+// abc();           ///calling function by their name
 
+
+// *c v-2
+
+//function can be pass value as they can receives them 
+//passing value(s) are called arguments
+//variable(s) that recieves those passing values are called parameters
+
+               //parameters (can be multiple with comma seprated)
+function myString(num) {
+    console.log(num.toString())
+}
+
+        //arguments (can be multiple with comma seprated)
+myString(32);
+myString(69);
