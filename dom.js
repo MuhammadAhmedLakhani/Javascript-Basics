@@ -3,7 +3,7 @@
 
 // console.log(document.getElementById("main").innerText)
 
-document.getElementById("main").innerText = "Muhammad Ahmed"
+// document.getElementById("main").innerText = "Muhammad Ahmed"
 
 //function can be called through html as well
 function display(){
