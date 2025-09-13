@@ -20,10 +20,25 @@
 //variable(s) that recieves those passing values are called parameters
 
                //parameters (can be multiple with comma seprated)
+// function myString(num) {
+//     console.log(num.toString())
+// }
+
+        //arguments (can be multiple with comma seprated)
+// myString(32);
+// myString(69);
+
+
+// *c v-3
+
+//functions arguments can be passed through variable as well or through userprompt
+
+var userInput = +prompt("enter your num")
+
 function myString(num) {
     console.log(num.toString())
 }
 
-        //arguments (can be multiple with comma seprated)
-myString(32);
-myString(69);
+myString(userInput)
+
+
