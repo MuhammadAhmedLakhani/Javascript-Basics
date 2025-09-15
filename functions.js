@@ -72,17 +72,30 @@
 
 //answer will be numbers range from 1-15 as function run 3 times
 
- var count = 0;
-function abc() {
-    for(var i = 0; i < 5; i++) {
-        console.log(count++)  //post increment
-    }
-}
+//  var count = 0;
+// function abc() {
+//     for(var i = 0; i < 5; i++) {
+//         console.log(count++)  //post increment
+//     }
+// }
 
-abc()
-abc()
-abc()
+// abc()
+// abc()
+// abc()
 
 //output will be numbers range from 0-14 
+
+
+//*c v5
+//function can pased another functiona as an argument as well
+
+
+function foo(notify) {
+    notify("Hello")
+}
+
+foo(alert);
+
+
 
 
