@@ -33,12 +33,41 @@
 
 //functions arguments can be passed through variable as well or through userprompt
 
-var userInput = +prompt("enter your num")
+// var userInput = +prompt("enter your num")
 
-function myString(num) {
-    console.log(num.toString())
+// function myString(num) {
+//     console.log(num.toString())
+// }
+
+// myString(userInput)
+
+
+// *c v-4
+
+// inside functions you can write any code which will run only when function is called
+
+// function abc () {
+//     for(var i = 0; i < 5; i++){
+//         console.log(i)
+//     }
+// }
+
+// abc()
+// abc()
+// abc()
+
+// //output will be numbers range from 0-4 three times
+
+var count = 0;
+function abc() {
+    for(var i = 0; i < 5; i++) {
+        count++
+        console.log(count)
+    }
 }
 
-myString(userInput)
+abc()
+abc()
+abc()
 
-
+//answer will be numbers range from 1-15 as function run 3 times
