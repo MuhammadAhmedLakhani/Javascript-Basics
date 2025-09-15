@@ -90,12 +90,25 @@
 //function can pased another functiona as an argument as well
 
 
-function foo(notify) {
-    notify("Hello")
+// function foo(notify) {
+//     notify("Hello")
+// }
+
+// foo(alert);
+
+
+//*c v6
+//functions can be passed an entire array as well
+
+
+function abc(a) {
+    console.log(a)
 }
 
-foo(alert);
 
+var arr = ["smit"];
+
+abc(arr); 
 
 
 
