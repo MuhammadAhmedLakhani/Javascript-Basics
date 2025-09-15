@@ -148,9 +148,21 @@
 
 //local variable has functional scope which means they cannot be accessible throughout the program
 
-function abc() {
-    var a = "Hello";  //local variable
-}
+// function abc() {
+//     var a = "Hello";  //local variable
+// }
 
-console.log(a);     //variable a is not acessible here as its local variable
+// console.log(a);     //variable a is not acessible here as its local variable
+
+// *c v-10
+//Global scope variables available throughout the peogram even inside function block as well
+
+var a = "SMIT";
+
+function foo() {
+    console.log(a) //global variable accessible in finctional block
+}
+foo();
+console.log(a)   //global variable accessible throughout the program
+
 
