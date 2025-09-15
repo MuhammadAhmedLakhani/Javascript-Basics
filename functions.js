@@ -114,16 +114,35 @@
 
 //"return" keyword return vlaue from function
 
-function checkAttendence(student) {
-    var lastClass = [1234,4535,6677,9933]
-    if(lastClass.indexOf(student) !== -1) {
-        return "Present"
-    } else {
-        return "Absent"
+// function checkAttendence(student) {
+//     var lastClass = [1234,4535,6677,9933]
+//     if(lastClass.indexOf(student) !== -1) {
+//         return "Present"
+//     } else {
+//         return "Absent"
+//     }
+// }
+
+// console.log(checkAttendence(1234));
+// console.log(checkAttendence(1274));
+// console.log(checkAttendence(6677));
+// console.log(checkAttendence(2933));
+
+
+//*c v-8
+
+var count = 1;
+function foo() {
+    for(var i = 0; i < 5; i++) {
+        count++
+        console.log(count)
+        return count
     }
 }
 
-console.log(checkAttendence(1234));
-console.log(checkAttendence(1274));
-console.log(checkAttendence(6677));
-console.log(checkAttendence(2933));
+console.log(foo());
+
+//output will be 2 and 2 as return halts the lopp imdeediatley just like break
+
+
+
