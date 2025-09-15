@@ -101,14 +101,29 @@
 //functions can be passed an entire array as well
 
 
-function abc(a) {
-    console.log(a)
+// function abc(a) {
+//     console.log(a)
+// }
+
+
+// var arr = ["smit"];
+
+// abc(arr); 
+
+// *c v7
+
+//"return" keyword return vlaue from function
+
+function checkAttendence(student) {
+    var lastClass = [1234,4535,6677,9933]
+    if(lastClass.indexOf(student) !== -1) {
+        return "Present"
+    } else {
+        return "Absent"
+    }
 }
 
-
-var arr = ["smit"];
-
-abc(arr); 
-
-
-
+console.log(checkAttendence(1234));
+console.log(checkAttendence(1274));
+console.log(checkAttendence(6677));
+console.log(checkAttendence(2933));
