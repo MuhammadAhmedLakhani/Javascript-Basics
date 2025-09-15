@@ -131,18 +131,26 @@
 
 //*c v-8
 
-var count = 1;
-function foo() {
-    for(var i = 0; i < 5; i++) {
-        count++
-        console.log(count)
-        return count
-    }
-}
+// var count = 1;
+// function foo() {
+//     for(var i = 0; i < 5; i++) {
+//         count++
+//         console.log(count)
+//         return count
+//     }
+// }
 
-console.log(foo());
+// console.log(foo());
 
 //output will be 2 and 2 as return halts the lopp imdeediatley just like break
 
+// *c v-9
 
+//local variable has functional scope which means they cannot be accessible throughout the program
+
+function abc() {
+    var a = "Hello";  //local variable
+}
+
+console.log(a);     //variable a is not acessible here as its local variable
 
