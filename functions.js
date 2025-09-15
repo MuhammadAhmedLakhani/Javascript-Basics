@@ -58,11 +58,24 @@
 
 // //output will be numbers range from 0-4 three times
 
-var count = 0;
+// var count = 0;
+// function abc() {
+//     for(var i = 0; i < 5; i++) {
+//         count++
+//         console.log(count)
+//     }
+// }
+
+// abc()
+// abc()
+// abc()
+
+//answer will be numbers range from 1-15 as function run 3 times
+
+ var count = 0;
 function abc() {
     for(var i = 0; i < 5; i++) {
-        count++
-        console.log(count)
+        console.log(count++)  //post increment
     }
 }
 
@@ -70,4 +83,6 @@ abc()
 abc()
 abc()
 
-//answer will be numbers range from 1-15 as function run 3 times
+//output will be numbers range from 0-14 
+
+
