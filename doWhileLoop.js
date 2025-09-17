@@ -13,6 +13,6 @@
 var i = 0;
 
 do{ 
-    console.log(i)    running still one time even condition is false
+    console.log(i)    //running still one time even condition is false
     i++
 }while(i > 2)
