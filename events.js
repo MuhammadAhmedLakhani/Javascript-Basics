@@ -128,22 +128,53 @@
 
 //Geeting input value when  enter is pressed
 
+var timingElement = document.getElementById("typing");
 
-
-var listElement = document.getElementById("list")
+var listElement = document.getElementById("list");
 
 
 
 function sendMessage() {
-    if(event.keyCode === 13){
+    if (event.keyCode === 13) {
         var val = document.getElementById("message");
         console.log("message recieved")
-        
+
         listElement.innerHTML += "<li>" + val.value + "</li>"
 
-        val.value = ""
         
+        timingElement.style.display = "block";
 
+        if (["hi", "hello", "oye", "moye"].indexOf(val.value.toLowerCase()) !== -1) {
+
+            console.log("inside cond")
+
+
+            setTimeout(function () {
+                listElement.innerHTML += "<li> Hello </li>"
+
+            }, 2000)
+            setTimeout(function () {
+                listElement.innerHTML += "<li> App kese ho? </li>";
+                timingElement.style.display = "none";    
+            }, 4000)
+
+            
+        } else if (["thek hun", "thek", "alhamdulillah", "fine", "mast", "thik", "thek hn", "sukar alhamdulillah", "sukar hai allah ka", "bas thek", "sahih hun"].indexOf(val.value.toLowerCase()) !== -1) {
+
+            setTimeout(function () {
+                listElement.innerHTML += "<li> Apki kia help karsakta hun  </li>"
+                timingElement.style.display = "none";
+
+            }, 2000)
+
+        } else {
+            listElement.innerHTML += "<li> Ap ki baat nahi samaj nahi aye </li>"
+            timingElement.style.display = "block";
+
+
+        }
+
+        val.value = ""
 
     }
 }
