@@ -64,32 +64,58 @@
 //expanding text onmouseover method
 
 
-var p = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi asperiores nulla qui, quia cumque, minus architecto aperiam eaque doloribus eligendi enim placeat accusamus esse impedit doloremque earum est vero! Sapiente fuga asperiores numquam animi suscipit ratione est, dolore commodi obcaecati aspernatur nulla sunt consequatur non vero repellat cupiditate totam dolorem reprehenderit incidunt explicabo magni accusantium unde. Porro nobis est atque at esse odio veritatis laboriosam! Consequatur, error dicta! Ratione temporibus repellendus eos maiores qui laboriosam sint. Est iure maxime veniam iusto impedit accusantium repellendus quos atque, quas, voluptatum ipsum amet corporis a totam animi laudantium repudiandae commodi perferendis quam vel mollitia. Animi commodi quis iusto itaque sunt laboriosam, repudiandae, culpa asperiores eligendi hic tempore error eum. Vitae sunt quaerat molestias labore deleniti veniam provident corrupti repudiandae distinctio. Molestias iste iure quisquam, fugit accusantium nequei!";
+// var p = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi asperiores nulla qui, quia cumque, minus architecto aperiam eaque doloribus eligendi enim placeat accusamus esse impedit doloremque earum est vero! Sapiente fuga asperiores numquam animi suscipit ratione est, dolore commodi obcaecati aspernatur nulla sunt consequatur non vero repellat cupiditate totam dolorem reprehenderit incidunt explicabo magni accusantium unde. Porro nobis est atque at esse odio veritatis laboriosam! Consequatur, error dicta! Ratione temporibus repellendus eos maiores qui laboriosam sint. Est iure maxime veniam iusto impedit accusantium repellendus quos atque, quas, voluptatum ipsum amet corporis a totam animi laudantium repudiandae commodi perferendis quam vel mollitia. Animi commodi quis iusto itaque sunt laboriosam, repudiandae, culpa asperiores eligendi hic tempore error eum. Vitae sunt quaerat molestias labore deleniti veniam provident corrupti repudiandae distinctio. Molestias iste iure quisquam, fugit accusantium nequei!";
 
 
 
-var shortText = p.slice(0, 50) + "...";
+// var shortText = p.slice(0, 50) + "...";
 
-console.log(shortText)
+// console.log(shortText)
 
-var pElement = document.getElementById("text")
+// var pElement = document.getElementById("text")
 
-pElement.innerHTML = shortText
+// pElement.innerHTML = shortText
 
-function expand(value) {
+// function expand(value) {
 
-    console.log(value.type)
+//     console.log(value.type)
 
-    if (value.type === "mouseout") {
+//     if (value.type === "mouseout") {
 
-        pElement.innerHTML = shortText
-        pElement.style.backgroundColor = "white"
+//         pElement.innerHTML = shortText
+//         pElement.style.backgroundColor = "white"
 
 
-    }else if(value.type === "mouseover"){
-        pElement.innerHTML = p;
+//     }else if(value.type === "mouseover"){
+//         pElement.innerHTML = p;
 
-        pElement.style.backgroundColor = "purple"
+//         pElement.style.backgroundColor = "purple"
+
+//     }
+
+
+
+
+// }
+
+
+
+function cityDisplay() {
+
+    var zipCode = document.getElementById("zip");
+    var city = document.getElementById("city");
+    console.log(zipCode.value)
+
+    switch (zipCode.value) {
+        case "1":
+            city.value = "Karachi"
+            break
+        case "2":
+            city.value = "Lahore"
+            break
+        case "3":
+            city.value = "Islamabad"
+            break
 
     }
 
@@ -97,7 +123,5 @@ function expand(value) {
 
 
 }
-
-
 
 
