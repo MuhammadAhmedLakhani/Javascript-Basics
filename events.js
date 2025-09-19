@@ -41,16 +41,21 @@
 
 //swaping image on mouse over
 
-var count= 3;
+var count = 3;
 var temImage1 = "";
-function imageSwaping(val,type) {      //getting event passed by brower as parameter
-    
+function imageSwaping(val) {      //getting event passed by brower as parameter
 
-    if(type === "over"){
-        val.target.src = "https://i0.wp.com/picjumbo.com/wp-content/uploads/calming-nature-wallpaper-free-image.jpeg?w=600&quality=80"
-    }else {
+
+
+    if (val.type === "mouseover") {
         val.target.src = "https://img.freepik.com/free-photo/scenery-frozen-lake-surrounded-by-forest_181624-14951.jpg?semt=ais_hybrid&w=740&q=80"
+
     }
+    else if (val.type === "mouseout") {
+        val.target.src = "https://i0.wp.com/picjumbo.com/wp-content/uploads/calming-nature-wallpaper-free-image.jpeg?w=600&quality=80"
+    }
+
+
 
 
 }
