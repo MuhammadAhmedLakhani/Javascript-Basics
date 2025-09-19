@@ -130,11 +130,21 @@
 
 
 
+var listElement = document.getElementById("list")
+
+
+
 function sendMessage() {
     if(event.keyCode === 13){
-        var val = document.getElementById("message").value;
+        var val = document.getElementById("message");
+        console.log("message recieved")
+        
+        listElement.innerHTML += "<li>" + val.value + "</li>"
 
-        console.log(val)
+        val.value = ""
+        
+
+
     }
 }
 
