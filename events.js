@@ -100,28 +100,41 @@
 
 
 
-function cityDisplay() {
+// function cityDisplay() {
 
-    var zipCode = document.getElementById("zip");
-    var city = document.getElementById("city");
-    console.log(zipCode.value)
+//     var zipCode = document.getElementById("zip");
+//     var city = document.getElementById("city");
+//     console.log(zipCode.value)
 
-    switch (zipCode.value) {
-        case "1":
-            city.value = "Karachi"
-            break
-        case "2":
-            city.value = "Lahore"
-            break
-        case "3":
-            city.value = "Islamabad"
-            break
+//     switch (zipCode.value) {
+//         case "1":
+//             city.value = "Karachi"
+//             break
+//         case "2":
+//             city.value = "Lahore"
+//             break
+//         case "3":
+//             city.value = "Islamabad"
+//             break
 
+//     }
+
+
+
+
+// }
+
+
+
+//Geeting input value when  enter is pressed
+
+
+
+function sendMessage() {
+    if(event.keyCode === 13){
+        var val = document.getElementById("message").value;
+
+        console.log(val)
     }
-
-
-
-
 }
-
 
