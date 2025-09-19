@@ -25,17 +25,17 @@
 //--getting radio input value
 
 
-function submit() {
-    var cities = document.getElementsByName("city");
+// function submit() {
+//     var cities = document.getElementsByName("city");
 
-    for (var city of cities) {
-        if (city.checked) {
-            console.log(city.value)
-        }
-    }
+//     for (var city of cities) {
+//         if (city.checked) {
+//             console.log(city.value)
+//         }
+//     }
 
 
-}
+// }
 
 
 
