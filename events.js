@@ -83,9 +83,13 @@ function expand(value) {
     if (value.type === "mouseout") {
 
         pElement.innerHTML = shortText
+        pElement.style.backgroundColor = "white"
+
 
     }else if(value.type === "mouseover"){
         pElement.innerHTML = p;
+
+        pElement.style.backgroundColor = "purple"
 
     }
 
