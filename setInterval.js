@@ -1,18 +1,46 @@
-var count = 0;
-function counter(){
+// var count = 0;
+// function counter(){
 
-    count++
-    console.log(count)
+//     count++
+//     console.log(count)
+
+// }
+
+
+// var id = setInterval(counter,1000)
+
+// console.log(id,"id")
+
+// function stopTimer(){
+//     clearInterval(id)
+//     console.log("stop function running")
+
+// }
+
+function increment(){
+
+    
+
+
 
 }
 
+var count = 10;
+function move(){
 
-var id = setInterval(counter,1000)
+    console.log("moving")
+    count += 10;
 
-console.log(id,"id")
+    var car = document.getElementById("move")
 
-function stopTimer(){
+    
+    car.style.left = count + "px" 
+
+}
+
+var id = setInterval(move,300)
+
+function stop(){
+
     clearInterval(id)
-    console.log("stop function running")
-
 }

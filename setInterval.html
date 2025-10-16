@@ -7,7 +7,15 @@
     <style>
 
 
+    .main {
+        position: relative;
+    }
+    .button{
+        position: absolute;
+        background-color: rgb(57, 122, 133);
+        left: 10px                  ;
 
+    }
 
 
 
@@ -16,8 +24,12 @@
     </style>
 </head>
 <body>
-
-    <button onclick="stopTimer()" >Stop</button>
+<div class="main">
+    <button class="button" id="move">Yaris</button>
+    <br>
+    <br>
+    <button onclick="stop()">Stop</button>
+</div>
 
     
     <script src="setInterval.js"></script>
