@@ -7,4 +7,12 @@ function counter(){
 }
 
 
-setInterval(counter,1000)
+var id = setInterval(counter,1000)
+
+console.log(id,"id")
+
+function stopTimer(){
+    clearInterval(id)
+    console.log("stop function running")
+
+}
