@@ -106,10 +106,29 @@
 
 //acessing parent mode
 
-var child = document.getElementById("child");
+// var child = document.getElementById("child");
 
-var parent = child.parentNode
+// var parent = child.parentNode
 
-console.log(parent)
+// console.log(parent)
 
-///geeting parent div with id main through method
+///geeting parent div with id main through method   
+
+
+//---nodeName method
+
+//it return name of element but in uppercase eg 'H1'
+
+var main = document.getElementById("main");
+
+element = main.childNodes[1].firstChild
+
+console.log(element.nodeName)
+
+//return target element tag name
+
+
+
+
+
+
