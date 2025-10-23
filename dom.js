@@ -155,11 +155,23 @@
 //gives the value of a particular attribute which can be altered dynamically through setAttribute method
 
 
-var main  =  document.getElementById("main")
+// var main  =  document.getElementById("main")
 
-var id = main.getAttribute("id") ;
+// var id = main.getAttribute("id") ;
 
-console.log(id)
+// console.log(id)
+
+//--setAttribute method
+//it sets the particular attribute 
+//it require two value, one is attribute name and second is its value
+
+var main =  document.getElementById("main")
+
+main.setAttribute("id","newID")
+
+console.log(main)
+
+//one warning here that it set the attribute from previous value as well mean its not add new value but remove previous value and if you want to add both previou and new then pass both ones
 
 
 
