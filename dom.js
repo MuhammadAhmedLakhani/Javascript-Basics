@@ -131,7 +131,37 @@
 
 //.length gives length of targeted elements of docuement which is array if multiple as in this case
 
-var elements = document.getElementsByTagName("div")
+// var elements = document.getElementsByTagName("div")
 
-console.log(elements.length)
+// console.log(elements.length)
+
+
+//---DOM Attributes
+//html element attrbites can be setup with DOM attribites methods dynamically
+
+
+//---hasAttribite method
+
+//it returns true is given attribute is present
+
+var main = document.getElementById("main")
+console.log(main.hasAttribute("class"))
+
+//return true in thsi example
+
+
+
+
+
+//c:v1
+
+
+
+
+
+
+
+
+
+
 
