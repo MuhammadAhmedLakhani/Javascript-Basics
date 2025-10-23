@@ -20,11 +20,20 @@
 
 
 
-var element = document.getElementsByTagName('div')
+// var element = document.getElementsByTagName('div')
 
-console.log(element[2])
+// console.log(element[2])
+
+//get/set value thorugh TagName metthod
+
+//c:v2
+
+//selecting only relevant particular tag through TagName method with.ID method combination
 
 
+var relevantElements  = document.getElementById("main") 
 
+relevantElements = relevantElements.getElementsByTagName('div')
 
+console.log(relevantElements[0])
 
