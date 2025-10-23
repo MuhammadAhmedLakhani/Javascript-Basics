@@ -53,8 +53,16 @@
 //c:v2
 
 
-console.log(document.childNodes[1].childNodes[2].childNodes[3])
+// console.log(document.childNodes[1].childNodes[2].childNodes[3])
 
 //getiing div with id= "main through childNode combination"
 
 
+//---junk artifacts
+
+//junk artifacts are space before or  after start of tag use for formatting of code for readiblity purposes
+// Junk artifacts are noisy and make loading of webpage slower for browseer
+
+console.log(document.childNodes[1].childNodes[1])
+
+//displaying junk artifact '#text'
