@@ -76,8 +76,15 @@
 //if it return '1' it means not junk and if return '3' it means junk artifact
 
 
-var main = document.getElementById("main")
+// var main = document.getElementById("main")
 
-console.log(main.childNodes[0].nodeType)
+// console.log(main.childNodes[0].nodeType)
+
+//---firstChild method
+//it select immediate child of parent element
+
+console.log(document.childNodes[1].firstChild)
+
+
 
 
