@@ -144,10 +144,30 @@
 
 //it returns true is given attribute is present
 
-var main = document.getElementById("main")
-console.log(main.hasAttribute("class"))
+// var main = document.getElementById("main")
+// console.log(main.hasAttribute("class"))
 
 //return true in thsi example
+
+
+//---getAttribute method 
+
+//gives the value of a particular attribute which can be altered dynamically through setAttribute method
+
+
+var main  =  document.getElementById("main")
+
+var id = main.getAttribute("id") ;
+
+console.log(id)
+
+
+
+
+
+
+
+
 
 
 
