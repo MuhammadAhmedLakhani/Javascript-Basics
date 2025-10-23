@@ -11,7 +11,7 @@
 //
 
 
-//get/set value thorugh TagName metthod
+//----get/set value thorugh TagName metthod
 
 //c:v1
 
@@ -24,16 +24,30 @@
 
 // console.log(element[2])
 
-//get/set value thorugh TagName metthod
+//----get/set value thorugh TagName metthod
 
 //c:v2
 
 //selecting only relevant particular tag through TagName method with.ID method combination
 
 
-var relevantElements  = document.getElementById("main") 
+// var relevantElements  = document.getElementById("main") 
 
-relevantElements = relevantElements.getElementsByTagName('div')
+// relevantElements = relevantElements.getElementsByTagName('div')
 
-console.log(relevantElements[0])
+// console.log(relevantElements[0])
+
+
+//-----selecting element by childNodes method
+
+// c:v1
+
+//when DOM manipulate it converts the entire document in tree like structure called Document Object Model where each element is organiae as a particular node
+// any node can be acessed through childNodes method
+
+
+
+
+console.log(document.childNodes)  //getting child node of whole docuement
+
 
