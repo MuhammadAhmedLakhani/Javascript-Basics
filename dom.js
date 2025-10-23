@@ -119,16 +119,19 @@
 
 //it return name of element but in uppercase eg 'H1'
 
-var main = document.getElementById("main");
+// var main = document.getElementById("main");
 
-element = main.childNodes[1].firstChild
+// element = main.childNodes[1].firstChild
 
-console.log(element.nodeName)
+// console.log(element.nodeName)
 
 //return target element tag name
 
+//---getting length of eleemnt
 
+//.length gives length of targeted elements of docuement which is array if multiple as in this case
 
+var elements = document.getElementsByTagName("div")
 
-
+console.log(elements.length)
 
