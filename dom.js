@@ -48,6 +48,13 @@
 
 
 
-console.log(document.childNodes)  //getting child node of whole docuement
+// console.log(document.childNodes)  //getting child node of whole docuement
+
+//c:v2
+
+
+console.log(document.childNodes[1].childNodes[2].childNodes[3])
+
+//getiing div with id= "main through childNode combination"
 
 
