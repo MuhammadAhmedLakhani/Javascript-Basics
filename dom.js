@@ -94,10 +94,22 @@
 
 
 
-var main = document.getElementById("main");
+// var main = document.getElementById("main");
 
-console.log(main.childNodes[1].lastChild)
+// console.log(main.childNodes[1].lastChild)
 
 //accessing last child of first div of parent div with id = "main"
 
 
+
+//---parentNode method
+
+//acessing parent mode
+
+var child = document.getElementById("child");
+
+var parent = child.parentNode
+
+console.log(parent)
+
+///geeting parent div with id main through method
