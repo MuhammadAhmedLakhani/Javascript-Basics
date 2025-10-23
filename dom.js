@@ -60,9 +60,24 @@
 
 //---junk artifacts
 
+//c:v1
+
 //junk artifacts are space before or  after start of tag use for formatting of code for readiblity purposes
 // Junk artifacts are noisy and make loading of webpage slower for browseer
 
-console.log(document.childNodes[1].childNodes[1])
+// console.log(document.childNodes[1].childNodes[1])
 
 //displaying junk artifact '#text'
+
+
+//----nodeType method 
+
+//nodeType methos is use for findin whether a node is junk artifact or not
+//if it return '1' it means not junk and if return '3' it means junk artifact
+
+
+var main = document.getElementById("main")
+
+console.log(main.childNodes[0].nodeType)
+
+
