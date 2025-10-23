@@ -81,10 +81,23 @@
 // console.log(main.childNodes[0].nodeType)
 
 //---firstChild method
+
+
 //it select immediate child of parent element
 
-console.log(document.childNodes[1].firstChild)
+// console.log(document.childNodes[1].firstChild)
 
 
+//---lastChild Method
+
+//selects last child of parent node\
+
+
+
+var main = document.getElementById("main");
+
+console.log(main.childNodes[1].lastChild)
+
+//accessing last child of first div of parent div with id = "main"
 
 
