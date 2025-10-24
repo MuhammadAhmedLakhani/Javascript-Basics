@@ -200,11 +200,25 @@
 
 
 
-var div = document.createElement("div")
-var h1 = document.createElement("h1")
+// var div = document.createElement("div")
+// var h1 = document.createElement("h1")
 
-div.appendChild(h1)
-console.log(div)
+// div.appendChild(h1)
+// console.log(div)
+
+
+//---createTextNode method
+//it is use for creating text node to add text inside newly created
+//html tag like paragrapgh
+
+var p = document.createElement("p")
+
+var text = document.createTextNode('paragrapgh text added dynamically through javascript')
+
+
+p.appendChild(text)
+
+console.log(p)
 
 
 
