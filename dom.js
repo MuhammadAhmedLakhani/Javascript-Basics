@@ -178,11 +178,18 @@
 //gives the list of all attributes of targeted element
 //since result is an array which can be indexed for a partular value
 
-var main = document.getElementById("main");
+// var main = document.getElementById("main");
 
-console.log(main.attributes[1])
+// console.log(main.attributes[1])
 
 
+//---createElement method
+
+//it is use for creating html elements through javascript
+
+var div = document.createElement("div")
+
+console.log(div)
 
 
 
