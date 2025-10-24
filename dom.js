@@ -225,50 +225,71 @@
 //c:v1
 
 
-var div = document.createElement("div");
+// var div = document.createElement("div");
 
-div.setAttribute("id","main");
-div.setAttribute("class","c1");
-var childDiv = document.createElement("div") 
+// div.setAttribute("id","main");
+// div.setAttribute("class","c1");
+// var childDiv = document.createElement("div") 
 
-childDiv.setAttribute("id","child")
+// childDiv.setAttribute("id","child")
 
-div.appendChild(childDiv)
+// div.appendChild(childDiv)
 
-var h1 = document.createElement("h1")
+// var h1 = document.createElement("h1")
 
-var h1Text = document.createTextNode("Hello World")
+// var h1Text = document.createTextNode("Hello World")
 
-h1.appendChild(h1Text)
+// h1.appendChild(h1Text)
 
 
 
-var h2 = document.createElement("h2")
+// var h2 = document.createElement("h2")
 
-var h2Text = document.createTextNode("Good Morning")
+// var h2Text = document.createTextNode("Good Morning")
 
-h2.appendChild(h2Text)
+// h2.appendChild(h2Text)
 
-childDiv.appendChild(h1)
-childDiv.appendChild(h2)
+// childDiv.appendChild(h1)
+// childDiv.appendChild(h2)
 
-var childDiv1 = document.createElement("div")
-var textDiv1  = document.createTextNode("Good Night")
+// var childDiv1 = document.createElement("div")
+// var textDiv1  = document.createTextNode("Good Night")
 
-childDiv1.appendChild(textDiv1)
-div.appendChild(childDiv1)
+// childDiv1.appendChild(textDiv1)
+// div.appendChild(childDiv1)
 
-console.log(div)
+// console.log(div)
 
-//replacing harcode html with this newly created with help of javascript
+// //replacing harcode html with this newly created with help of javascript
+
+
+// var main = document.getElementById("main")
+
+// main.appendChild(div)     // replacing dynamically
+
+
+// ---passing of HTML throught javascript
+
+//the previous method was too long and old way
+//using backticks -> `` it  is easy to add html through Javacript
+//c:v2
+
+
+var div = document.createElement("div")
+
+div.innerHTML = `<div id="main" class="c1">
+    <div id="child"><h1>Hello World</h1>
+        <h2>Hello Muslim World</h2></div>
+    <div>
+        Good Night
+    </div>
+
+</div>`
 
 
 var main = document.getElementById("main")
 
-main.appendChild(div)     // replacing dynamically
-
-
-
+main.appendChild(div)
 
 
 
