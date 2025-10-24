@@ -187,8 +187,23 @@
 
 //it is use for creating html elements through javascript
 
-var div = document.createElement("div")
+// var div = document.createElement("div")
 
+// console.log(div)
+
+
+//---appendChild method
+
+//the html element created through createElement method is apty and to add content inside it we need this method
+
+//it applies to parent element and child elelment is passed in arguments
+
+
+
+var div = document.createElement("div")
+var h1 = document.createElement("h1")
+
+div.appendChild(h1)
 console.log(div)
 
 
@@ -196,8 +211,6 @@ console.log(div)
 
 
 
-
-//c:v1
 
 
 
