@@ -165,17 +165,22 @@
 //it sets the particular attribute 
 //it require two value, one is attribute name and second is its value
 
-var main =  document.getElementById("main")
+// var main =  document.getElementById("main")
 
-main.setAttribute("id","newID")
+// main.setAttribute("id","newID")
 
-console.log(main)
+// console.log(main)
 
 //one warning here that it set the attribute from previous value as well mean its not add new value but remove previous value and if you want to add both previou and new then pass both ones
 
 
+//---attributes method
+//gives the list of all attributes of targeted element
+//since result is an array which can be indexed for a partular value
 
+var main = document.getElementById("main");
 
+console.log(main.attributes[1])
 
 
 
