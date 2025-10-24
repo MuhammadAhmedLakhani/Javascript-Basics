@@ -211,18 +211,61 @@
 //it is use for creating text node to add text inside newly created
 //html tag like paragrapgh
 
-var p = document.createElement("p")
+// var p = document.createElement("p")
 
-var text = document.createTextNode('paragrapgh text added dynamically through javascript')
-
-
-p.appendChild(text)
-
-console.log(p)
+// var text = document.createTextNode('paragrapgh text added dynamically through javascript')
 
 
+// p.appendChild(text)
+
+// console.log(p)
+
+//---passing of HTML throught javascript
+
+//c:v1
 
 
+var div = document.createElement("div");
+
+div.setAttribute("id","main");
+div.setAttribute("class","c1");
+var childDiv = document.createElement("div") 
+
+childDiv.setAttribute("id","child")
+
+div.appendChild(childDiv)
+
+var h1 = document.createElement("h1")
+
+var h1Text = document.createTextNode("Hello World")
+
+h1.appendChild(h1Text)
+
+
+
+var h2 = document.createElement("h2")
+
+var h2Text = document.createTextNode("Good Morning")
+
+h2.appendChild(h2Text)
+
+childDiv.appendChild(h1)
+childDiv.appendChild(h2)
+
+var childDiv1 = document.createElement("div")
+var textDiv1  = document.createTextNode("Good Night")
+
+childDiv1.appendChild(textDiv1)
+div.appendChild(childDiv1)
+
+console.log(div)
+
+//replacing harcode html with this newly created with help of javascript
+
+
+var main = document.getElementById("main")
+
+main.appendChild(div)     // replacing dynamically
 
 
 
