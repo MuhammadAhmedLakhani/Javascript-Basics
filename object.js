@@ -46,11 +46,22 @@ var student = {
 
 
 
-delete student.school //whole school object deleted
+// delete student.school //whole school object deleted
 
-delete student.classDays // whole array removes
-console.log(student)  
+// delete student.classDays // whole array removes
+// console.log(student)  
 
+
+//---in keyword
+
+//it let to check whether a particular key is present in object or not
+//return true if present and false if absent
+
+//check only key not value (important)
+
+console.log("name" in student)  //return true
+
+console.log("lastname" in student)  //return false
 
 
 
