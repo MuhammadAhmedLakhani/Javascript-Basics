@@ -73,19 +73,45 @@
 
 //part of OOP (abstraction)
 
-var student = {
-    name: "Ahmed",
-    email:"xyz@gmail.com",
-    number:123141342,
-    active:true,
-    classDays:["tues","thurs","fri"],
-    school:{
-        name: "SMIT"
-    },
-    getData:function (){
-        console.log(`${student.name} (${student.school.name})`)
-    }
+// var student = {
+//     name: "Ahmed",
+//     email:"xyz@gmail.com",
+//     number:123141342,
+//     active:true,
+//     classDays:["tues","thurs","fri"],
+//     school:{
+//         name: "SMIT"
+//     },
+//     getData:function (){
+//         console.log(`${student.name} (${student.school.name})`)
+//     }
+// }
+
+
+// student.getData()
+
+//--this keyword
+
+
+// 'this' keyword gives 'undefined' when called globally but instead
+//of undefined it gives global object call windows
+
+//as we normally use javascript in non strict mode it prevents undefines and replace it with window object
+
+//window contain all information about every method builin or user generated about javascript
+
+
+// console.log(this)  //window object printed
+
+//but when inside function this console, it looks for from where the function is called
+//if the function is called globally independent of anything
+// it givrd undefined which is also handled by javascript in to window onject
+
+function todo(){
+    console.log(this)
 }
 
 
-student.getData()
+todo()  //function is called globlally
+
+
