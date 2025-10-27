@@ -30,10 +30,27 @@ var student = {
 //new properties can be added in object with assignment operator(=)
 
 
-student.rollNum = 34234;      //added new pair
+// student.rollNum = 34234;      //added new pair
 
-student.school.location = "Bahadurabad" //added in nested object
+// student.school.location = "Bahadurabad" //added in nested object
 
-student.classDays.push("sunday")   //added to array value
+// student.classDays.push("sunday")   //added to array value
 
-console.log(student)
+// console.log(student)
+
+
+//----deleting key-value pair
+
+//through use of 'delete' keyword use can remove particular 
+// value and its  key
+
+
+
+delete student.school //whole school object deleted
+
+delete student.classDays // whole array removes
+console.log(student)  
+
+
+
+
