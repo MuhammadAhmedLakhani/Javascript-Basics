@@ -18,7 +18,22 @@ var student = {
     }
 }
 
-console.log(student.name)    //acessing b=value
-console.log(student.school.name) //acessing nested value
-console.log(student.classDays[student.classDays.length - 1]) 
+// console.log(student.name)    //acessing b=value
+// console.log(student.school.name) //acessing nested value
+// console.log(student.classDays[student.classDays.length - 1]) 
 //accesiing array last value inside object
+
+
+
+//adding values in object
+
+//new properties can be added in object with assignment operator(=)
+
+
+student.rollNum = 34234;      //added new pair
+
+student.school.location = "Bahadurabad" //added in nested object
+
+student.classDays.push("sunday")   //added to array value
+
+console.log(student)
