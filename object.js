@@ -13,9 +13,12 @@ var student = {
     number:123141342,
     active:true,
     classDays:["tues","thurs","fri"],
-    schoo   l:{
+    school:{
         name: "SMIT"
     }
 }
 
-console.log(student)
+console.log(student.name)    //acessing b=value
+console.log(student.school.name) //acessing nested value
+console.log(student.classDays[student.classDays.length - 1]) 
+//accesiing array last value inside object
