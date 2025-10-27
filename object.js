@@ -107,11 +107,44 @@
 //if the function is called globally independent of anything
 // it givrd undefined which is also handled by javascript in to window onject
 
-function todo(){
-    console.log(this)
+
+
+// function todo(){
+//     console.log(this)
+// }
+
+
+// todo()  //function is called globlally
+
+
+
+//--functiosn inside object v2 (with this keyword)
+//when function is called from object (not globally it )
+//this keyword get the same object as value from which it is called
+
+var student = {
+    name: "Ahmed",
+    email:"xyz@gmail.com",
+    number:123141342,
+    active:true,
+    classDays:["tues","thurs","fri"],
+    school:{
+        name: "SMIT"
+    },
+    getData: function (){
+        console.log(this.school.name) //gives "smit"
+    }
 }
 
 
-todo()  //function is called globlally
+
+
+student.getData()  //calling function through object
+
+
+
+
+
+
 
 
