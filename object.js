@@ -7,16 +7,16 @@
 
 
 
-var student = {
-    name: "Ahmed",
-    email:"xyz@gmail.com",
-    number:123141342,
-    active:true,
-    classDays:["tues","thurs","fri"],
-    school:{
-        name: "SMIT"
-    }
-}
+// var student = {
+//     name: "Ahmed",
+//     email:"xyz@gmail.com",
+//     number:123141342,
+//     active:true,
+//     classDays:["tues","thurs","fri"],
+//     school:{
+//         name: "SMIT"
+//     }
+// }
 
 // console.log(student.name)    //acessing b=value
 // console.log(student.school.name) //acessing nested value
@@ -59,9 +59,33 @@ var student = {
 
 //check only key not value (important)
 
-console.log("name" in student)  //return true
+// console.log("name" in student)  //return true
 
-console.log("lastname" in student)  //return false
+// console.log("lastname" in student)  //return false
 
 
+//----functions in objects
+//ther is slight difference in syntac as no name present as name is actually key of that funcrtion
 
+//this function has acesiblity of all other key:value pairs of objects
+
+//it helps in building logix which uses object other key value pair values
+
+//part of OOP (abstraction)
+
+var student = {
+    name: "Ahmed",
+    email:"xyz@gmail.com",
+    number:123141342,
+    active:true,
+    classDays:["tues","thurs","fri"],
+    school:{
+        name: "SMIT"
+    },
+    getData:function (){
+        console.log(`${student.name} (${student.school.name})`)
+    }
+}
+
+
+student.getData()
