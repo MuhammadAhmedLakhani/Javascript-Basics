@@ -122,29 +122,53 @@
 //when function is called from object (not globally it )
 //this keyword get the same object as value from which it is called
 
-var student = {
-    name: "Ahmed",
-    email:"xyz@gmail.com",
-    number:123141342,
-    active:true,
-    classDays:["tues","thurs","fri"],
-    school:{
-        name: "SMIT"
-    },
-    getData: function (){
-        console.log(this.school.name) //gives "smit"
-    }
+// var student = {
+//     name: "Ahmed",
+//     email:"xyz@gmail.com",
+//     number:123141342,
+//     active:true,
+//     classDays:["tues","thurs","fri"],
+//     school:{
+//         name: "SMIT"
+//     },
+//     getData: function (){
+//         console.log(this.school.name) //gives "smit"
+//     }
+// }
+
+
+
+
+// student.getData()  //calling function through object
+
+
+
+//--constractor function
+
+//it helps in generating data efiiciently by not creatin objects again and again
+//since data will contain same keys just values change , constractor function let us gives values and no need to repeat code again and again
+//the first letter of constructor function is always capital 
+//we create object rheough constructor function
+//'new' keyword is added to make a object as without new when function called this will have a window object as value 
+
+
+function MakeData(name,email,number){
+    this.name = name;
+    this.email = email;
+    this.number = number;
 }
 
 
+var data = [
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+]
 
-
-student.getData()  //calling function through object
-
-
-
-
-
-
+console.log(data)
 
 
