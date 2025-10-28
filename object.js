@@ -150,25 +150,44 @@
 //the first letter of constructor function is always capital 
 //we create object rheough constructor function
 //'new' keyword is added to make a object as without new when function called this will have a window object as value 
+//constructor function make blueprint of object to be produced
+
+// function MakeData(name,email,number){
+//     this.name = name;
+//     this.email = email;
+//     this.number = number;
+// }
 
 
-function MakeData(name,email,number){
-    this.name = name;
-    this.email = email;
-    this.number = number;
+// var data = [
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+// ]
+
+// console.log(data)
+
+//--factory function for making object
+//its not an efficient way as making objects of same properties again and agin repeating
+
+
+function student(name,email,number){
+    return {
+        name : name,
+        email : email,
+        number :number
+    }
 }
 
 
-var data = [
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-]
+console.log(student("Asad","asad@gmail.com",23232323))
 
-console.log(data)
+
+
+
 
 
