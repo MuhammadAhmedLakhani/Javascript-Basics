@@ -186,15 +186,49 @@
 
 // console.log(student("Asad","asad@gmail.com",23232323))
 
+// function MakeData(name,email,number){
+//     this.name = name;
+//     this.email = email;
+//     this.number = number;
+//     this.getInfo = function () {
+//         return this.name
+//     }
+// }
+
+
+// var data = [
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+// ]
+
+// console.log(data)
+
+
+//--prototype in objects
+
+
+//the same method is part of every object generated
+//which is not a good practice
+//in prototype reference/copy is passed/shared  while regeneratig objects
+
+//linke array methods are placed in prototype
+
+//code gets optimized
+
 function MakeData(name,email,number){
     this.name = name;
     this.email = email;
     this.number = number;
-    this.getInfo = function () {
-        return this.name
-    }
 }
 
+MakeData.prototype.getInfo = function (){
+    return this.name
+}
 
 var data = [
     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
@@ -207,5 +241,11 @@ var data = [
 ]
 
 console.log(data)
+
+
+
+
+
+
 
 
