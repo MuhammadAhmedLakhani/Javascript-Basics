@@ -173,21 +173,39 @@
 
 //--factory function for making object
 //its not an efficient way as making objects of same properties again and agin repeating
+//you can add method in constructor function as well
+
+// function student(name,email,number){
+//     return {
+//         name : name,
+//         email : email,
+//         number :number
+//     }
+// }
 
 
-function student(name,email,number){
-    return {
-        name : name,
-        email : email,
-        number :number
+// console.log(student("Asad","asad@gmail.com",23232323))
+
+function MakeData(name,email,number){
+    this.name = name;
+    this.email = email;
+    this.number = number;
+    this.getInfo = function () {
+        return this.name
     }
 }
 
 
-console.log(student("Asad","asad@gmail.com",23232323))
+var data = [
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+]
 
-
-
-
+console.log(data)
 
 
