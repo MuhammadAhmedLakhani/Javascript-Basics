@@ -220,29 +220,48 @@
 
 //code gets optimized
 
-function MakeData(name,email,number){
-    this.name = name;
-    this.email = email;
-    this.number = number;
+// function MakeData(name,email,number){
+//     this.name = name;
+//     this.email = email;
+//     this.number = number;
+// }
+
+// MakeData.prototype.getInfo = function (){
+//     return this.name
+// }
+
+
+
+
+
+// var data = [
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+//     new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
+// ]
+
+// console.log(data)
+
+
+//--finding key in object
+
+//when you give the key inside square brakets with object instead of finding that same key the key behaves link a variable which can be passed value from user
+
+
+var student = {
+    name:"Ahmed"
 }
 
-MakeData.prototype.getInfo = function (){
-    return this.name
-}
-
-var data = [
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-    new MakeData("Ahmed","muhammadahmed@gmail.com",1232234232),
-]
-
-console.log(data)
+var n = "name"
 
 
+student[a]
+
+//'a' behaves like variable
 
 
 
