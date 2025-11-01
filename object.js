@@ -252,19 +252,40 @@
 //when you give the key inside square brakets with object instead of finding that same key the key behaves link a variable which can be passed value from user
 
 
-var student = {
-    name:"Ahmed"
+// var student = {
+//     name:"Ahmed"
+// }
+
+// var n = "name"
+
+
+// student[a]
+
+// //'a' behaves like variable
+
+//--for in loop
+
+//"for key in obj" loop is loop for objects
+
+//it runs and fetch the first key object inside key variable
+
+//loop runs until object has keys
+
+
+
+var names = {
+    n1:"Ahmed",
+    n2:"Ahad",
+    n3:"Ghous"
 }
 
-var n = "name"
 
-
-student[a]
-
-//'a' behaves like variable
-
+for( key in names){
+    console.log(key)  //getting all keys of object
+}
 
 
 
-
-
+for(key in names) {
+    console.log(names[key]) //geeting all values
+}
