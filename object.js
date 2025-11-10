@@ -297,17 +297,35 @@
 //In javascript object stores by reference(not by value)
 
 //reference means that each object has an specific id which is storeed instead of value
+//v-1
 
+// var obj = {
+//     name:"Ghous"
+// }
+
+// var obj1 = obj;
+
+// var obj2 = obj1;
+// obj2.name = "Ahmed"
+
+// console.log(obj,obj1,obj2)
+
+
+//v-2
+
+function updateArr(arr){
+    arr[1].name = "Ahmed"
+    return arr
+}
 
 var obj = {
     name:"Ghous"
 }
 
-var obj1 = obj;
+var result = updateArr([obj,obj,obj])
 
-var obj2 = obj1;
-obj2.name = "Ahmed"
+console.log(result)
 
-console.log(obj,obj1,obj2)
+
 
 
