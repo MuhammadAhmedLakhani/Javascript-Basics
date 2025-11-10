@@ -14,19 +14,53 @@
 
 // --v1
 
+// console.log(localStorage)
+
+// localStorage.setItem("email","adad@gmail.com") //setting new key-value
+
+// console.log(localStorage)
+
+// console.log(localStorage.getItem("email"))
+
+// //receiving data from local storage
+
+
+// localStorage.removeItem("email")
+
+// console.log(localStorage)
+
+// //removing key from local storage
+
+
+//---v2 (setting object)
+
+// since localStorage only stores in string we need to convert object into dtring
+
+//JSAON.stringify method is used to convert object into strings
+
+//for making it again as object when want to access the object JSON.parse is needed to convert object from string to object
+
+
+var obj = {
+    name :"Ghous"
+}
+
+localStorage.setItem("student",JSON.stringify(obj))
+
+//setting object in local storage
+
 console.log(localStorage)
 
-localStorage.setItem("email","adad@gmail.com") //setting new key-value
 
-console.log(localStorage)
+console.log(localStorage.getItem("student"))
 
-console.log(localStorage.getItem("email"))
-
-//receiving data from local storage
+//here the object received but in string type
 
 
-localStorage.removeItem("email")
+console.log(JSON.parse(localStorage.getItem("student")))
 
-console.log(localStorage)
+//CONVERTS THE OBJECT FROM STRING to object 
 
-//removing key from local storage
+
+
+
