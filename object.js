@@ -273,19 +273,41 @@
 
 
 
-var names = {
-    n1:"Ahmed",
-    n2:"Ahad",
-    n3:"Ghous"
+// var names = {
+//     n1:"Ahmed",
+//     n2:"Ahad",
+//     n3:"Ghous"
+// }
+
+
+// for( key in names){
+//     console.log(key)  //getting all keys of object
+// }
+
+
+
+// for(key in names) {
+//     console.log(names[key]) //geeting all values
+// }
+
+
+
+//---objects by-reference
+
+//In javascript object stores by reference(not by value)
+
+//reference means that each object has an specific id which is storeed instead of value
+
+
+var obj = {
+    name:"Ghous"
 }
 
+var obj1 = obj;
 
-for( key in names){
-    console.log(key)  //getting all keys of object
-}
+var obj2 = obj1;
+obj2.name = "Ahmed"
+
+console.log(obj,obj1,obj2)
 
 
-
-for(key in names) {
-    console.log(names[key]) //geeting all values
-}
