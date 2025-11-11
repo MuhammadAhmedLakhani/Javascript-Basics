@@ -11,31 +11,43 @@
 
 
 function getValue() {
-    
+
     var input = document.getElementById("input")
     var name = input.value.trim()
     var input1 = document.getElementById("input1")
     var email = input1.value.trim()
+    var input2 = document.getElementById("input2")
+    var number = input2.value.trim()
     //validation basic
 
-    if(name.length === 0){
+    if (name.length === 0) {
         console.log("please enter name correctly")
-        
-    }else if(email.length === 0){
-            console.log("please entre email correctly")
-        }
-        else if(!(emailRegex.test(email))){
-            console.log('Email is not in right formate')
 
-        }
-    else{
+    }else if (email.length === 0) {
+        console.log("please entre email correctly")
+    }
+    else if (number.length === 0) {
+        console.log("please entre number correctly")
+    }
+    else if (!(emailRegex.test(email))) {
+        console.log('Email is not in right formate')
 
-        console.log(name,"name")
-        console.log(email,"email")
+    }
+    else if (!(pakPhoneNumberRegex.test(number))) {
+        console.log("num regex")
+        console.log('Number is not in right formate')
+
+    }
+    else {
+
+        console.log(name, "name")
+        console.log(email, "email")
+        console.log(number, "number")
     }
 
     input.value = ""
     input1.value = ""
+    input2.value = ""
 
 }
 
@@ -57,7 +69,8 @@ var emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 //returns true if email is in right pattern
 
+//--pak number regex
 
-
+var pakPhoneNumberRegex = /^((\+92)|(0092)|(0))?(3)([0-6]{1})([0-9]{8})$/;
 
 
