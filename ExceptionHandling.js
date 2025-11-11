@@ -19,12 +19,33 @@
 // try block is incomplete without catch block
 //if try run and receives error error is saved in err inside catch which can be handeled
 
-console.log("Hello")
+// console.log("Hello")
 
+// try{
+//     console.lof("Hi")
+
+// }catch(err){
+//     console.log(err)
+// }
+// console.log("Hye")
+
+
+
+//---throw
+
+//throw let us place other errors related to validation for instance to be placed inside catch block
+//this can be useful if you style your error through sweat alert 
+//inorder to not write more code again and again throw is placed inside try catch blcok
+
+
+
+var name = "";
 try{
-    console.lof("Hi")
+
+    if( name === ""){
+        throw "Please enter your name"
+    }
 
 }catch(err){
     console.log(err)
 }
-console.log("Hye")
