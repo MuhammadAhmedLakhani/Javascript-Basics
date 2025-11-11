@@ -17,11 +17,24 @@
 
 // you can also open particular url link in new window
 
-var newWindow = window.open()
+// var newWindow = window.open()
 
-newWindow.location.assign("https://facebook.com")
+// newWindow.location.assign("https://facebook.com")
 
 //opening facebook on new window
+
+
+//v-3
+
+//you can also open local file path in seprate window
+
+
+lWindow = window.open("browser.html")
+
+//you can also define name of this specific window to avoid confusion
+
+
+nWindow = window.open("localStorage.html","localWindow")
 
 
 
