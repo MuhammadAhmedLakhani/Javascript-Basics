@@ -53,7 +53,9 @@
 
 // location.replace()
 
-
+//go let you go both forward and backward
+//if history.go(-2) has -2 as argument it goes back 2 times from the currnet location if possiible 
+//similarly for positive numerical arguments except it goes forward
 
 
 
