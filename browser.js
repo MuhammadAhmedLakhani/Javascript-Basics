@@ -31,8 +31,25 @@
 
 
 
-var s = new URLSearchParams(window.location.search)
+// var s = new URLSearchParams(window.location.search)
 
-console.log(s.get("a"))
+// console.log(s.get("a"))
 
-//getting search param of key a
+// //getting search param of key a
+
+
+//---location methods
+
+//assign update the location to given one
+
+location.assign("https://www.facebook.com")
+
+//reload just reload the page
+//if true is passed it is hard reload (catche removed)
+//if false passed it is soft reload by default is is soft reload
+location.reload(true)
+
+//replace is same as assign but 
+//in replace it doesnot maintain history when backspace is pressed
+
+location.replace()
