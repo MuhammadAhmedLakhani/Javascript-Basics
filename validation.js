@@ -18,6 +18,16 @@ function getValue() {
     var email = input1.value.trim()
     var input2 = document.getElementById("input2")
     var number = input2.value.trim()
+    var choices = document.getElementsByName("city")
+    var checkFlag = false;
+    //radio validation
+
+    for(var i = 0; i < choices.length; i++) {
+        if(choices[i].checked === true ){
+            checkFlag = true
+        }
+    }
+
     //validation basic
 
     if (name.length === 0) {
@@ -31,6 +41,10 @@ function getValue() {
     }
     else if (!(emailRegex.test(email))) {
         console.log('Email is not in right formate')
+
+    }
+    else if (checkFlag === false ) {
+        console.log('Radio button not checked')
 
     }
     else if (!(pakPhoneNumberRegex.test(number))) {
