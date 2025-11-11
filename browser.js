@@ -41,15 +41,30 @@
 //---location methods
 
 //assign update the location to given one
+// location.assign("https://www.facebook.com")
 
-location.assign("https://www.facebook.com")
+// //reload just reload the page
+// //if true is passed it is hard reload (catche removed)
+// //if false passed it is soft reload by default is is soft reload
+// location.reload(true)
 
-//reload just reload the page
-//if true is passed it is hard reload (catche removed)
-//if false passed it is soft reload by default is is soft reload
-location.reload(true)
+// //replace is same as assign but 
+// //in replace it doesnot maintain history when backspace is pressed
 
-//replace is same as assign but 
-//in replace it doesnot maintain history when backspace is pressed
+// location.replace()
 
-location.replace()
+
+
+
+
+function localStorage () {
+    location = "localStorage.html"
+
+}
+
+
+function forward () {
+    history.forward()
+}
+
+// history.back()

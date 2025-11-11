@@ -61,6 +61,9 @@ console.log(JSON.parse(localStorage.getItem("student")))
 
 //CONVERTS THE OBJECT FROM STRING to object 
 
-
+function back(){
+    console.log("back running")
+    history.go(-1)
+}
 
 
