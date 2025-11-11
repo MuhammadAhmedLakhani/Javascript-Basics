@@ -6,7 +6,7 @@
 
 //trim removes white space before and after the content 
 
-
+//radio button donot need regex for validationas no user input except selection
 
 
 
