@@ -11,6 +11,8 @@
 
 // var w = window.open()
 
+//this will return new window object as well or null if block
+
 // console.log(w)
 
 //here w will be null if popup blocks from creating new window
